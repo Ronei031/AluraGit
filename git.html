@@ -1,0 +1,51 @@
+-------------------------------------------GIT/GITHUB----------------------------------------------------
+
+CONFIGURAR O GIT
+git config --local user.name "Ronei Silva"
+git config --local user.email "ronei.silva@autoglass.com"
+
+
+INICIAR REPOSITORIO DENTRO DA PASTA
+git init
+
+
+MOSTRAR INFORMAÇOES DENTRO DO DIRETORIO
+git status
+
+
+COMANDO PARA QUE O GIT MONITORE O ARQUIVO
+git add 'nome do arquivo, sem aspas'
+git add . (ADICIONA TUDO QUE ESTIVER NA PASTA)
+git rm --cached "nome do arquivo"(remove arquivo para não ser monitorado)
+
+
+INFORMAÇÃO DE MODIFICAÇÕES/ COMMIT
+git commit -m "Mensagem-Descrever o que está sendo feito."
+
+
+VER HISTORIOCO DE ALTERAÇÕES DE COMMITS
+git log
+git log --oneline
+git log -p 
+
+MANIPULAR DIRETORIO
+mkdir servidor
+cd servidor/
+cd ../GIT
+
+
+CLONAR UM REPOSITORIO PARA OUTRO USUARIO
+Crie uma pasta com o nome do usuario que irá acessar o repositório.
+git clone /C/Users/ronei.silva/Desktop/GIT/servidor/  projeto
+
+
+ENVIAR DADOS PARA O SERVIDOR 
+git push local master
+
+
+RENOMEAR 
+git remote rename origin local
+
+
+USUARIO PUXAR OS DADOS
+git pull
